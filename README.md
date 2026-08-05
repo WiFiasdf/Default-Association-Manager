@@ -1,2 +1,0 @@
-# Default-Association-Manager
-这是一款适用于Windows11快捷设置默认打开方式的工具

@@ -1,0 +1,40 @@
+#include <windows.h>
+
+#pragma code_page(65001)
+
+// 说明：应用清单（asInvoker / PerMonitorV2 DPI / longPathAware）不在此处嵌入。
+// app.manifest 已加入目标源文件列表，由链接器 /MANIFESTINPUT 合并嵌入，
+// 若此处再声明 RT_MANIFEST 会触发 CVT1100 资源重复错误。
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName",      "DefaultAppSetter Project"
+            VALUE "FileDescription",  "Windows 11 默认软件设置器"
+            VALUE "FileVersion",      "1.0.0.0"
+            VALUE "InternalName",     "DefaultAppSetter"
+            VALUE "LegalCopyright",   "MIT License"
+            VALUE "OriginalFilename", "默认软件设置器.exe"
+            VALUE "ProductName",      "默认软件设置器"
+            VALUE "ProductVersion",   "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END

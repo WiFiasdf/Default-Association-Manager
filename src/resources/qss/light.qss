@@ -1,0 +1,66 @@
+/* =============================================================================
+ * 浅色主题令牌。语法：@名称: 值;
+ * 由 ThemeManager 解析后替换 common.qss 中的同名占位符，并同步给 C++ 绘制代码。
+ * ========================================================================== */
+
+@bgTop:              #F6F7F9;
+@bgBottom:           #EDEFF3;
+
+@surface:            #FBFBFB;
+@surfaceAlt:         #F5F6F8;
+@surfaceInput:       #FFFFFF;
+
+@card:               #FFFFFF;
+@cardHover:          #F7F9FC;
+
+@control:            #FDFDFD;
+@controlHover:       #F2F3F5;
+@controlPressed:     #E9EAEC;
+@controlDisabled:    #F1F1F1;
+
+@border:             #E2E3E6;
+@borderSubtle:       #EAEBED;
+@borderStrong:       #CDCED1;
+
+@text:               #1B1B1B;
+@textSecondary:      #5D5D5D;
+@textTertiary:       #767676;
+@textDisabled:       #A5A5A5;
+
+@accent:             #0067C0;
+@accentHover:        #0F70C6;
+@accentPressed:      #3382C9;
+@accentBorder:       #005FB8;
+@accentFg:           #FFFFFF;
+@accentFgDim:        #E6F0FA;
+@accentText:         #005FB8;
+@accentSubtle:       #E5F0FB;
+@accentSubtleBorder: #C7DFF6;
+
+@success:            #0F7B0F;
+@successBg:          #E8F5E9;
+@successBorder:      #BFE3C0;
+
+@warning:            #9D5D00;
+@warningBg:          #FFF8E6;
+@warningBorder:      #F0DCA8;
+
+@danger:             #C42B1C;
+@dangerHover:        #D13A2A;
+@dangerPressed:      #A82418;
+@dangerBg:           #FDF0EF;
+@dangerBorder:       #F1C7C2;
+
+@scrollHandle:       #C6C7CA;
+@scrollHandleHover:  #A6A7AA;
+
+@navHover:           #EDEEF0;
+@navSelected:        #E4E6EA;
+
+@menuBg:             #FFFFFF;
+
+@checkIcon:          :/icons/check_light.svg;
+@arrowIcon:          :/icons/arrow_light.svg;
+
+@shadow:             #22000000;
+@skeleton:           #E9EAEC;

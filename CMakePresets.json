@@ -1,0 +1,62 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "base-msvc",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_PREFIX_PATH": "D:/Qt/6.11.1/msvc2022_64",
+        "CMAKE_MAKE_PROGRAM": "D:/Qt/Tools/Ninja/ninja.exe",
+        "CMAKE_C_COMPILER": "cl.exe",
+        "CMAKE_CXX_COMPILER": "cl.exe"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    },
+    {
+      "name": "ninja-msvc-release",
+      "displayName": "Ninja MSVC Release",
+      "inherits": "base-msvc",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "ninja-msvc-debug",
+      "displayName": "Ninja MSVC Debug",
+      "inherits": "base-msvc",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "ninja-msvc-release",
+      "configurePreset": "ninja-msvc-release"
+    },
+    {
+      "name": "ninja-msvc-debug",
+      "configurePreset": "ninja-msvc-debug"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "ninja-msvc-release",
+      "configurePreset": "ninja-msvc-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

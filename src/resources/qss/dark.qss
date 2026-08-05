@@ -1,0 +1,65 @@
+/* =============================================================================
+ * 深色主题令牌。语法：@名称: 值;
+ * ========================================================================== */
+
+@bgTop:              #262628;
+@bgBottom:           #1C1C1E;
+
+@surface:            #202020;
+@surfaceAlt:         #262626;
+@surfaceInput:       #1F1F1F;
+
+@card:               #2C2C2C;
+@cardHover:          #333333;
+
+@control:            #2E2E2E;
+@controlHover:       #383838;
+@controlPressed:     #262626;
+@controlDisabled:    #2A2A2A;
+
+@border:             #3A3A3A;
+@borderSubtle:       #323232;
+@borderStrong:       #4A4A4A;
+
+@text:               #FFFFFF;
+@textSecondary:      #C5C5C5;
+@textTertiary:       #9C9C9C;
+@textDisabled:       #6E6E6E;
+
+@accent:             #4CC2FF;
+@accentHover:        #62CBFF;
+@accentPressed:      #42A9E0;
+@accentBorder:       #5CC8FF;
+@accentFg:           #10202A;
+@accentFgDim:        #23404F;
+@accentText:         #7BD3FF;
+@accentSubtle:       #1E3A48;
+@accentSubtleBorder: #2C5568;
+
+@success:            #6CCB5F;
+@successBg:          #1E2E1C;
+@successBorder:      #33502F;
+
+@warning:            #FCE100;
+@warningBg:          #332E17;
+@warningBorder:      #554B22;
+
+@danger:             #FF99A4;
+@dangerHover:        #FFB0B8;
+@dangerPressed:      #E4808B;
+@dangerBg:           #3A2224;
+@dangerBorder:       #5C3438;
+
+@scrollHandle:       #4E4E4E;
+@scrollHandleHover:  #6B6B6B;
+
+@navHover:           #2E2E2E;
+@navSelected:        #383838;
+
+@menuBg:             #2C2C2C;
+
+@checkIcon:          :/icons/check_dark.svg;
+@arrowIcon:          :/icons/arrow_dark.svg;
+
+@shadow:             #55000000;
+@skeleton:           #2F2F2F;

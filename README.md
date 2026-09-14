@@ -125,4 +125,4 @@ tests/             UserChoice 哈希与方案服务单元测试
 
 ## 许可
 
-MIT License
+LGPL-3.0
